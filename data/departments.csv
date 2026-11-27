@@ -1,0 +1,6 @@
+dept_id,dept_name,dept_head,location
+DEPT-ENG,Engineering,Sarah Chen,London
+DEPT-SAL,Sales,James Morton,London
+DEPT-MKT,Marketing,Priya Sharma,Manchester
+DEPT-OPS,Operations,David Okafor,London
+DEPT-FIN,Finance,Emma Watts,Edinburgh

@@ -1,0 +1,21 @@
+je_id,cost_centre,gl_account,gl_account_name,fiscal_period,je_date,amount,source_type,source_ref,description,flag
+JE-001,CC-ENG-01,6100,Salaries & Wages,Q1,2026-02-28,72777.34,PAYROLL,WB-001,Payroll - Senior Engineers (3 FTE),NORMAL
+JE-002,CC-ENG-01,6200,Contractor Fees,Q1,2026-02-28,60833.9,PAYROLL,WB-002,Payroll - Nexus Consulting - Platform Dev,NORMAL
+JE-003,CC-ENG-01,6100,Salaries & Wages,Q2,2026-05-28,76016.28,PAYROLL,WB-003,Payroll - Senior Engineers (3 FTE),NORMAL
+JE-004,CC-ENG-01,6200,Contractor Fees,Q2,2026-05-28,57301.3,PAYROLL,WB-004,Payroll - Nexus Consulting - Migration Support,NORMAL
+JE-005,CC-ENG-02,6200,Contractor Fees,Q1,2026-02-28,32348.58,PAYROLL,WB-007,Payroll - ML Ops Contractor,NORMAL
+JE-006,CC-SAL-01,6100,Salaries & Wages,Q1,2026-02-28,87773.51,PAYROLL,WB-009,Payroll - Sales Team (4 FTE),NORMAL
+JE-007,CC-SAL-01,6100,Salaries & Wages,Q2,2026-05-28,90405.2,PAYROLL,WB-010,Payroll - Sales Team (4 FTE),NORMAL
+JE-008,CC-OPS-01,6100,Salaries & Wages,Q1,2026-02-28,64303.41,PAYROLL,WB-016,Payroll - IT Engineers (3 FTE),NORMAL
+JE-009,CC-OPS-01,6100,Salaries & Wages,Q2,2026-05-28,44136.14,PAYROLL,WB-017,Payroll - IT Engineers (2 FTE),NORMAL
+JE-010,CC-ENG-01,6500,Professional Services,Q1,2026-03-20,64481.3,PROCUREMENT,PO-001,PO payment - Platform migration consulting,NORMAL
+JE-011,CC-ENG-01,6500,Professional Services,Q1,2026-03-20,47955.27,PROCUREMENT,PO-002,PO payment - Cloud infrastructure setup,NORMAL
+JE-012,CC-ENG-01,6500,Professional Services,Q2,2026-06-20,71514.22,PROCUREMENT,PO-003,PO payment - Migration support - phase 2,UNUSUAL
+JE-013,CC-OPS-01,6300,Materials & Supplies,Q1,2026-03-20,35141.27,PROCUREMENT,PO-005,PO payment - Server hardware,NORMAL
+JE-014,CC-OPS-01,6300,Materials & Supplies,Q2,2026-06-20,55162.84,PROCUREMENT,PO-006,PO payment - Network equipment upgrade,NORMAL
+JE-015,CC-OPS-01,6300,Materials & Supplies,Q2,2026-06-20,45121.48,PROCUREMENT,PO-007,PO payment - Emergency security appliances,REVIEW_REQUIRED
+JE-016,CC-OPS-02,6300,Materials & Supplies,Q1,2026-03-20,85319.88,PROCUREMENT,PO-011,PO payment - Office renovation phase 1,NORMAL
+JE-017,CC-FIN-02,7100,Adjustments,Q2,2026-06-28,17500,ADJUSTMENT,,Manual year-end accrual adjustment,REVIEW_REQUIRED
+JE-018,CC-MKT-01,6500,Professional Services,Q2,2026-06-30,18000,ACCRUAL,,Q2 marketing services accrual,NORMAL
+JE-019,CC-SAL-02,6100,Salaries & Wages,Q1,2026-02-28,22000,PAYROLL,WB-011,Payroll - Sales Ops Analyst,NORMAL
+JE-020,CC-FIN-02,6100,Salaries & Wages,Q1,2026-02-28,49000,PAYROLL,WB-020,Payroll - FP&A Analysts,NORMAL

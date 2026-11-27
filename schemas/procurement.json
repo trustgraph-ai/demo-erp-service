@@ -1,0 +1,78 @@
+{
+  "name": "procurement",
+  "description": "Purchase orders by cost centre and project with vendor, amount, approval status and urgency",
+  "fields": [
+    {
+      "name": "po_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Purchase order identifier"
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "proj_id",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Associated project identifier",
+      "foreign_key": {"projects": "proj_id"}
+    },
+    {
+      "name": "vendor",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Vendor or supplier name"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Description of the purchase"
+    },
+    {
+      "name": "po_amount",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Purchase order amount in GBP"
+    },
+    {
+      "name": "fiscal_period",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Fiscal quarter (Q1, Q2, Q3, Q4)"
+    },
+    {
+      "name": "po_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Purchase order date (YYYY-MM-DD)"
+    },
+    {
+      "name": "approval_status",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Approval status (APPROVED, PENDING, FLAGGED)"
+    },
+    {
+      "name": "urgency",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Urgency level (NORMAL, URGENT, EMERGENCY)"
+    }
+  ]
+}

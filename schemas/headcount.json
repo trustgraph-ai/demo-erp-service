@@ -1,0 +1,49 @@
+{
+  "name": "headcount",
+  "description": "Headcount by cost centre and fiscal period, split into permanent and contractor",
+  "fields": [
+    {
+      "name": "hc_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Headcount record identifier"
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "fiscal_period",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Fiscal quarter (Q1, Q2, Q3, Q4)"
+    },
+    {
+      "name": "permanent_hc",
+      "type": "integer",
+      "primary_key": false,
+      "required": true,
+      "description": "Number of permanent employees"
+    },
+    {
+      "name": "contractor_hc",
+      "type": "integer",
+      "primary_key": false,
+      "required": true,
+      "description": "Number of contractors"
+    },
+    {
+      "name": "total_hc",
+      "type": "integer",
+      "primary_key": false,
+      "required": true,
+      "description": "Total headcount (permanent + contractor)"
+    }
+  ]
+}

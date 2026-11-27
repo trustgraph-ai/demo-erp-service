@@ -1,0 +1,42 @@
+{
+  "name": "cost_centres",
+  "description": "Cost centres within departments, each with a named manager",
+  "fields": [
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Cost centre code (e.g. CC-ENG-01)"
+    },
+    {
+      "name": "cost_centre_name",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Descriptive name of the cost centre"
+    },
+    {
+      "name": "dept_id",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Parent department identifier",
+      "foreign_key": {"departments": "dept_id"}
+    },
+    {
+      "name": "manager",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre manager name"
+    },
+    {
+      "name": "is_active",
+      "type": "boolean",
+      "primary_key": false,
+      "required": true,
+      "description": "Whether the cost centre is currently active"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "name": "invoices_ap",
+  "description": "Accounts payable invoices linked to purchase orders with payment status and aging",
+  "fields": [
+    {
+      "name": "inv_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Invoice identifier"
+    },
+    {
+      "name": "po_id",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Purchase order identifier",
+      "foreign_key": {"procurement": "po_id"}
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "vendor",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Vendor or supplier name"
+    },
+    {
+      "name": "invoice_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Invoice date (YYYY-MM-DD)"
+    },
+    {
+      "name": "due_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Payment due date (YYYY-MM-DD)"
+    },
+    {
+      "name": "inv_amount",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Invoice amount in GBP"
+    },
+    {
+      "name": "payment_status",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Payment status (PAID, OVERDUE, PENDING)"
+    },
+    {
+      "name": "days_outstanding",
+      "type": "integer",
+      "primary_key": false,
+      "required": true,
+      "description": "Number of days outstanding (0 if paid)"
+    },
+    {
+      "name": "aging_bucket",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Aging category (CURRENT, 30_DAYS, 60_DAYS, 90_DAYS)"
+    },
+    {
+      "name": "fiscal_period",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Fiscal quarter (Q1, Q2, Q3, Q4)"
+    }
+  ]
+}

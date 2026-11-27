@@ -1,0 +1,84 @@
+{
+  "name": "general_ledger",
+  "description": "General ledger journal entries by cost centre and GL account with source references and audit flags",
+  "fields": [
+    {
+      "name": "je_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Journal entry identifier"
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "gl_account",
+      "type": "integer",
+      "primary_key": false,
+      "required": true,
+      "description": "General ledger account number"
+    },
+    {
+      "name": "gl_account_name",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "GL account descriptive name"
+    },
+    {
+      "name": "fiscal_period",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Fiscal quarter (Q1, Q2, Q3, Q4)"
+    },
+    {
+      "name": "je_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Journal entry date (YYYY-MM-DD)"
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Journal entry amount in GBP"
+    },
+    {
+      "name": "source_type",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Source of the entry (PAYROLL, INVOICE, MANUAL, ACCRUAL)"
+    },
+    {
+      "name": "source_ref",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Reference to the source record (e.g. WB-001, INV-001)"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Description of the journal entry"
+    },
+    {
+      "name": "flag",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Audit flag (NORMAL, UNUSUAL, REVIEW_REQUIRED)"
+    }
+  ]
+}

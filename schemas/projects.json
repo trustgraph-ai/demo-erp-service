@@ -1,0 +1,77 @@
+{
+  "name": "projects",
+  "description": "Projects with budget tracking, status, timeline and milestone progress",
+  "fields": [
+    {
+      "name": "proj_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Project identifier (e.g. PROJ-ALPHA)"
+    },
+    {
+      "name": "proj_name",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Project display name"
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Owning cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "proj_budget",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Total project budget in GBP"
+    },
+    {
+      "name": "proj_actual",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Actual project spend in GBP"
+    },
+    {
+      "name": "proj_variance",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Project variance (actual - budget), positive means overspend"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Project status (ON_TRACK, OVER_BUDGET, AT_RISK, COMPLETE)"
+    },
+    {
+      "name": "start_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Project start date (YYYY-MM-DD)"
+    },
+    {
+      "name": "target_end_date",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Target completion date (YYYY-MM-DD)"
+    },
+    {
+      "name": "milestone_status",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Current milestone status (ON_SCHEDULE, DELAYED, AHEAD)"
+    }
+  ]
+}

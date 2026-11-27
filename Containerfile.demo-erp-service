@@ -1,0 +1,3 @@
+FROM docker.io/trustgraph/duckdb-action-service:0.9.0
+
+COPY db/duckdb.data /data/duckdb.data

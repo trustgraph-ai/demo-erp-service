@@ -1,0 +1,11 @@
+cost_centre,cost_centre_name,dept_id,manager,is_active
+CC-ENG-01,Engineering - Platform,DEPT-ENG,Alex Rivera,true
+CC-ENG-02,Engineering - Data Science,DEPT-ENG,Lin Zhang,true
+CC-SAL-01,Direct Sales,DEPT-SAL,Tom Bradley,true
+CC-SAL-02,Sales Operations,DEPT-SAL,Nadia Hussain,true
+CC-MKT-01,Digital Marketing,DEPT-MKT,Chris Evans,true
+CC-MKT-02,Events & Campaigns,DEPT-MKT,Sophie Martin,true
+CC-OPS-01,IT Infrastructure,DEPT-OPS,Ravi Patel,true
+CC-OPS-02,Facilities,DEPT-OPS,Karen O'Brien,true
+CC-FIN-01,Accounting,DEPT-FIN,Michael Ross,true
+CC-FIN-02,FP&A,DEPT-FIN,Hannah Lee,true

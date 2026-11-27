@@ -1,0 +1,16 @@
+po_id,cost_centre,proj_id,vendor,description,po_amount,fiscal_period,po_date,approval_status,urgency
+PO-001,CC-ENG-01,PROJ-ALPHA,Nexus Consulting,Platform migration consulting,64481.3,Q1,2026-02-05,APPROVED,NORMAL
+PO-002,CC-ENG-01,PROJ-ALPHA,Nexus Consulting,Cloud infrastructure setup,47955.27,Q1,2026-02-16,APPROVED,NORMAL
+PO-003,CC-ENG-01,PROJ-ALPHA,Nexus Consulting,Migration support - phase 2,71514.22,Q2,2026-05-16,APPROVED,URGENT
+PO-004,CC-ENG-02,PROJ-BETA,Nexus Consulting,ML pipeline consulting,27837.32,Q1,2026-02-04,APPROVED,NORMAL
+PO-005,CC-OPS-01,PROJ-DELTA,DataVault Systems,Server hardware,35141.27,Q1,2026-03-29,APPROVED,NORMAL
+PO-006,CC-OPS-01,PROJ-DELTA,DataVault Systems,Network equipment upgrade,55162.84,Q2,2026-06-17,APPROVED,URGENT
+PO-007,CC-OPS-01,,CyberShield Ltd,Emergency security appliances,45121.48,Q2,2026-06-08,UNAPPROVED,EMERGENCY
+PO-008,CC-SAL-01,PROJ-GAMMA,Salesforce Inc,CRM license renewal,24109.98,Q1,2026-01-21,APPROVED,NORMAL
+PO-009,CC-MKT-01,PROJ-EPSILON,DesignWorks Agency,Brand creative assets,17986.41,Q1,2026-02-04,APPROVED,NORMAL
+PO-010,CC-MKT-02,,EventPro Ltd,Q2 conference booth,12117.49,Q2,2026-06-21,APPROVED,NORMAL
+PO-011,CC-OPS-02,PROJ-ETA,BuildRight Construction,Office renovation phase 1,85319.88,Q1,2026-01-29,APPROVED,NORMAL
+PO-012,CC-FIN-01,PROJ-ZETA,AuditTech Solutions,Automation software license,15055.38,Q1,2026-01-08,APPROVED,NORMAL
+PO-013,CC-ENG-01,PROJ-THETA,CloudScale Inc,API gateway infrastructure,21880.78,Q2,2026-04-05,APPROVED,NORMAL
+PO-014,CC-FIN-02,,Stationery Plus,Office supplies Q2,3521.35,Q2,2026-05-22,APPROVED,NORMAL
+PO-015,CC-SAL-02,,TechHire Recruitment,Sales ops recruitment fees,9455.87,Q2,2026-04-28,UNAPPROVED,NORMAL

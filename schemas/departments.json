@@ -1,0 +1,34 @@
+{
+  "name": "departments",
+  "description": "Organisational departments with head and location",
+  "fields": [
+    {
+      "name": "dept_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Department identifier (e.g. DEPT-ENG)"
+    },
+    {
+      "name": "dept_name",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Department display name"
+    },
+    {
+      "name": "dept_head",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Name of the department head"
+    },
+    {
+      "name": "location",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Office location"
+    }
+  ]
+}

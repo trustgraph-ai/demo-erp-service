@@ -1,0 +1,78 @@
+{
+  "name": "workforce_budget",
+  "description": "Workforce budget lines by cost centre and fiscal period with budget vs actual variance and approval status",
+  "fields": [
+    {
+      "name": "line_id",
+      "type": "string",
+      "primary_key": true,
+      "required": true,
+      "description": "Budget line identifier"
+    },
+    {
+      "name": "cost_centre",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Cost centre code",
+      "foreign_key": {"cost_centres": "cost_centre"}
+    },
+    {
+      "name": "fiscal_period",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Fiscal quarter (Q1, Q2, Q3, Q4)"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Budget category (SALARY, CONTRACTOR, EQUIPMENT, TRAINING, SOFTWARE)"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Description of the budget line item"
+    },
+    {
+      "name": "budget_amount",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Budgeted amount in GBP"
+    },
+    {
+      "name": "actual_amount",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Actual spend in GBP"
+    },
+    {
+      "name": "variance",
+      "type": "number",
+      "primary_key": false,
+      "required": true,
+      "description": "Variance (actual - budget), positive means overspend"
+    },
+    {
+      "name": "approval_status",
+      "type": "string",
+      "primary_key": false,
+      "required": true,
+      "description": "Approval status (APPROVED, PENDING, FLAGGED)"
+    },
+    {
+      "name": "proj_id",
+      "type": "string",
+      "primary_key": false,
+      "required": false,
+      "description": "Associated project identifier",
+      "foreign_key": {"projects": "proj_id"}
+    }
+  ]
+}
